@@ -8,10 +8,12 @@ import Projects from './components/Projects';
 import ContactLinks from './components/ContactLinks';
 import Error from './components/Error';
 import Landing from './components/Landing';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
+      <link rel='stylesheet' href='https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css'/>
       <style>
         @import url('https://fonts.googleapis.com/css?family=Maven+Pro&display=swap');
       </style>    
@@ -40,6 +42,7 @@ function App() {
           <Error/>
         </Route>
       </Switch> 
+      <Footer/>
     </div>
   );
 }
