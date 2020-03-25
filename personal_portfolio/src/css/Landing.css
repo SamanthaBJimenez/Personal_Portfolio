@@ -1,4 +1,9 @@
 .LandingDiv {
-    margin: 10% 30%;
+    width: 100%;
     display: inline-block;
+}
+
+.Typist {
+    font-size: 400%;
+    margin: 14% 17.5%;
 }
