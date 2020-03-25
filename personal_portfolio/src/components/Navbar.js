@@ -12,7 +12,7 @@ const Navbar = () => {
                     <li><NavLink exact to='/projects' activeClassName={"selected"} >Projects</NavLink></li>
                     {/* <li><NavLink exact to='/resume' activeClassName={"selected"} >Resume</NavLink></li> */}
                     <li><NavLink exact to='/contact' activeClassName={"selected"} >Contact</NavLink></li>
-                    <li style={{float: 'right'}}><NavLink exact to='/' activeClassName={"selected"}>LandingIMG</NavLink></li>
+                    <li style={{float: 'right'}}><NavLink exact to='/' activeClassName={"selected"}>Samantha<strong>\Jimenez</strong></NavLink></li>
                 </ul>
             </nav>
         </div>
