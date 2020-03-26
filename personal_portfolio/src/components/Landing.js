@@ -10,14 +10,12 @@ const Landing = () => {
         <script>
             dist/standalone/Typist.js
         </script>
-            <Typist avgTypingDelay={80}>
+            <Typist className='LandingTypist' avgTypingDelay={80}>
                 Howdy...
                 <Typist.Backspace count={7} delay={1000} />
-                ey.
+                ey..
                 <Typist.Backspace count={4} delay={1500} />
-                Hello.
-                <Typist.Backspace count={1} delay={1000} />
-                !
+                ello!
                 <Typist.Delay ms={1250} />
                 <br/>
                 My name is Samantha Jimenez.
