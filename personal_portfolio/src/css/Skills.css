@@ -1,7 +1,7 @@
 .SkillsDiv {
     margin: 10% 13%;
-    color: #CFA76B;
-    opacity: 0.7;
+    color: #460012;
+    opacity: .9;
     display: grid;  
     grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
     position: relative;
@@ -21,16 +21,15 @@ p {
 }
 
 .iconDiv:hover p {
-    color: #937446;
+    color: #460012;
     text-align: right;
     padding-right: 27%;
 }
 
 .iconDiv:hover .icon {
-    color: #937446;
-    opacity: 0.7;
+    opacity: 0.4;
     padding: auto;
     margin: auto;
     color: #ECF1F5;
-    background-color: #937446;
+    background-color: #460012;
 }
