@@ -1,4 +1,8 @@
-ul {
+/* .NavbarDiv {
+    z-index: 0;    
+} */
+
+.NavUl {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -8,6 +12,7 @@ ul {
     overflow: hidden;
     background-color: #043322;
     color: white;
+    z-index: 0;
 }
 
 .selected {
@@ -24,12 +29,12 @@ ul {
     font-weight: 100;
 }
 
-li {
+.NavLi {
     float: left;
     color: white;
 }
 
-li a {
+.NavLi a {
     display: block;
     color: white;
     text-align: center;
@@ -37,10 +42,10 @@ li a {
     text-decoration: none;
 }
 
-li:hover {
+.NavLi:hover {
     background-color: #075C3D;
 }
 
-li:visited {
+.NavLi:visited {
     color: lightgray;
 }
