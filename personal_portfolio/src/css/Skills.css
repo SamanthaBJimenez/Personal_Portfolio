@@ -9,9 +9,13 @@
 }
 
 .icon {
-    font-size: 700%;
+    font-size: 600%;
     padding: 6% 11%;
     border-radius: 5% 25%;
+}
+
+.iconDiv {
+    text-align: center;
 }
 
 p {
@@ -23,7 +27,7 @@ p {
 .iconDiv:hover p {
     color: #460012;
     text-align: right;
-    padding-right: 27%;
+    padding-right: 34%;
 }
 
 .iconDiv:hover .icon {

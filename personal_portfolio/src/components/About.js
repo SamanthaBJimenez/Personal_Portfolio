@@ -3,6 +3,9 @@ import Typist from 'react-typist';
 import 'react-typist/dist/Typist.css';
 import '../css/About.css';
 import Footer from './Footer';
+import doggie from '../ImgFiles/doggie2.jpeg';
+import whereAmI from '../ImgFiles/whereAmI.jpeg';
+import hiking from '../ImgFiles/hiking.jpeg';
 
 const About = () => {
     return (
@@ -25,19 +28,19 @@ const About = () => {
             </Typist>
             <div class="container-all">
                 <div class="container">
-                    <img src="https://bit.ly/2PvlS8Z" alt=""/>
-                    <span class="title">Lorem ipsum dolor</span>
-                    <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
+                    <img className='aboutImg flip doggo' src={doggie} alt='photoOfHusky'/>
+                    <span className='title'>Meet Nova</span>
+                    <span class='text'>She is a super friendly 4 year old Siberian Husky.</span>
                 </div>
                 <div class="container">
-                    <img src="https://bit.ly/2PXNumM" alt=""/>
-                    <span class="title">Lorem ipsum dolor</span>
-                    <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
+                    <img className='aboutImg flip amsterdam' src={whereAmI} alt='whereAmI'/>
+                    <span class="title">Amsterdam, Netherlands</span>
+                    <span class="text">I love taking trips and am flexible with relocating for a great opportunity.</span>
                 </div>
                 <div class="container">
-                    <img src="https://bit.ly/2KbUszm" alt=""/>
-                    <span class="title">Lorem ipsum dolor</span>
-                    <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
+                    <img className='aboutImg hiking' src={hiking} alt='hikingWithHusky'/>
+                    <span class='title'>Hiking with Nova</span>
+                    <span class='text'>Taking a break and getting some fresh air helps me unwind after a long coding session.</span>
                 </div>
             </div>
             <Footer/>

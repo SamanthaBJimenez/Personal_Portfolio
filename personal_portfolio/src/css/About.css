@@ -10,14 +10,17 @@ html {
     margin: auto;
     padding: auto;
     /* display: inline-block; */
+    /* overflow: hidden; */
 }
 
 .AboutTypist {
-    font-size: 200%;
-    margin: 14% 17.5% 5% 17.5%;
+  font-size: 200%;
+  margin: 10% 17.5% 5% 17.5%;
+  position:fixed;
+  /* z-index: 0; */
 }
 
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+/* @import url('https://fonts.googleapis.com/css?family=Poppins'); */
 body, html{
   margin: 0;
   /* background: #2b2927; */
@@ -42,20 +45,38 @@ h1{
   overflow: hidden;
   padding-left: 15px;
   /* padding-right: -10px; */
-  padding-top: 260px;
+  padding-top: 25%;
+  height: 333px;
 
 }
 .container{
   width: calc(33% - 6px);
+  /* width: calc(28% - 2px); */
   overflow:hidden;
-  height: fit-content;
-  margin:3px;
+  height: 285px;
+  margin: 3px;
   padding: 0;
   display:block;
   position:relative;
   float:left;
+  margin-top: 75px;
 }
-img{
+.flip {
+  transform: scale(1.5) rotate(90deg);
+}
+.hiking {
+  transform: scale(1.1);
+  margin-bottom: -151px;
+  margin-top: -166px;
+}
+.amsterdam {
+  margin-top: 12px;
+}
+.doggo {
+  margin-top: -4px;
+  margin-left: 2px;
+}
+.aboutImg{
   width: 100%;
   transition-duration: .3s;
   max-width: 100%;
@@ -91,11 +112,19 @@ img{
   transition-duration: .3s;
   transform: translate(-50%, -50%) 
 }
-.container:hover img{
-  transform: scale(1.2);
+.container:hover .flip {
+  transform: scale(1.4) rotate(90deg);
   transition-duration: .3s;
-  filter: grayscale(50%);
-  opacity: .7;
+  /* filter: grayscale(50%);
+  opacity: .7; */
+  filter: blur(1px) brightness(0.5);
+}
+.container:hover .hiking{
+  transform: scale(1);
+  transition-duration: .3s;
+  /* filter: grayscale(50%);
+  opacity: .7; */
+  filter: blur(1px) brightness(0.5);
 }
 .container:hover span{
   color:white;
