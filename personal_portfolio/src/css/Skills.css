@@ -1,39 +1,100 @@
+@font-face {
+    src: url(./../fonts/modernline.otf);
+    font-family: modernline;
+}
+
 .SkillsDiv {
-    margin: 10% 13%;
+    /* margin: 10% 13%;
     color: #460012;
     opacity: .9;
     display: grid;  
     grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
     position: relative;
-    align-items: center;
+    align-items: center; */
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+    /* background-color: #799174; */
+    /* background-color: #fefae0; */
+    background-color: rgb(242, 239, 234, .6);
+}
+
+.SkillsContent {
+    display: grid;
+    position: relative;
+    /* top: 15%; */
+    /* background-color: rgb(188, 108, 37, .6); */
+    /* background-color: rgb(111, 65, 37); */
+    background-color: rgb(225, 162, 78);
+    height: 100%;
+    /* width: 60%; */
+    /* margin: auto; */
+    /* margin: auto auto auto 400px; */
+    grid-template-columns: minmax(100px, 170px) minmax(100px, 170px) minmax(100px, 170px) minmax(100px, 170px) minmax(100px, 170px) minmax(100px, 170px) minmax(100px, 170px) minmax(100px, 170px) minmax(100px, 170px) minmax(100px, 170px) minmax(100px, 170px);
+    border-radius: 1px;
+    padding: 150px 30px 30px 30px;
+}
+
+.SkillsHeading {
+    /* background-color: rgb(111, 65, 37, .6); */
+    /* background-color: rgb(188, 108, 37, .6); */
+    color: white;
+    width: 20%;
+    /* height: 20%; */
+    position: absolute;
+    z-index: 1;
+    font-family: modernline;
+    border-radius: 1px;
+    justify-self: center;
+    text-rendering: optimizespeed;
+    top: 6vh;
+}
+
+.SkillsTitle {
+    margin: 20px auto;
+    padding: auto;
+    position: relative;
+    text-align-last: center;
+    font-size: 325%;
+    opacity: .8;
 }
 
 .icon {
-    font-size: 600%;
-    padding: 6% 11%;
+    font-size: 350%;
+    padding: 16% 11% 6% 11%;
     border-radius: 5% 25%;
+    /* color: rgb(111, 65, 37, .9); */
+    color: rgb(242, 239, 234, .6);
+
 }
 
 .iconDiv {
-    text-align: center;
+    margin: auto;
+    display: grid;
+    position: relative;
 }
 
-p {
+.iconP {
     position: relative;
     text-align: center;
-    color: #ECF1F5;
+    /* color: #bc6c25; */
+    /* color: rgb(188, 108, 37, .6); */
+    color: transparent;
 }
 
-.iconDiv:hover p {
-    color: #460012;
-    text-align: right;
-    padding-right: 34%;
+.iconDiv:hover .iconP {
+    /* color: #6f4125; */
+    color: rgb(242, 239, 234, .6);
+    /* text-align: right; */
+    /* padding-right: 18%; */
 }
 
 .iconDiv:hover .icon {
-    opacity: 0.4;
-    padding: auto;
-    margin: auto;
-    color: #ECF1F5;
-    background-color: #460012;
+    opacity: 0.9;
+    /* padding: auto; */
+    /* margin: auto; */
+    /* color: #ECF1F5; */
+    color: rgb(242, 239, 234);
+    /* background-color: #6f4125; */
+    background-color: rgb(111,65,37, .7);
 }

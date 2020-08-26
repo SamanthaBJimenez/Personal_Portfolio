@@ -1,12 +1,12 @@
 import React from 'react';
 import { FaGithubSquare } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
-import '../css/Footer.css';
+// import '../css/Footer.css';
 
 const Footer = () => {
     return (
         <div className='FooterDiv'>
-            <nav className='FooterNav'>
+            <nav class='navbar navbar-expand-lg sticky-top' /*style={{"justify-content": "flex-end"}}*/>
                 <a className='FooterA' href='https://github.com/SamanthaBJimenez'>
                     <FaGithubSquare/>
                 </a>

@@ -9,6 +9,9 @@
     background-color: #043322;
     color: white;
     display: inline-block;
+    /* background-color: #bf7f5b; */
+    /* opacity: 0.6; */
+    z-index: 1;
 }
 
 .FooterNav {
@@ -16,7 +19,7 @@
 }
 
 .FooterA {
-    padding: 5px 5px 0px 5px;
+    padding: 0px 5px 0px 5px;
     margin: 5px 0px 5px 5px;
     font-size: 150%;
     float: right;
