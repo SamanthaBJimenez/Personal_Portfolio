@@ -2,7 +2,7 @@ import React from 'react';
 // import Typist from 'react-typist';
 // import 'react-typist/dist/Typist.css';
 import avatar from './../ImgFiles/avatar.jpeg';
-// import '../css/About.css';
+import aboutImg from './../ImgFiles/about.jpeg';
 import Footer from './Footer';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
@@ -10,48 +10,25 @@ import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } f
 const About = () => {
     return (
         <div class="container">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 aos-init aos-animate" data-aos="fade-right">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt=""></img>
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content aos-init aos-animate" data-aos="fade-left">
-            <h3>Full Stack Software Engineer.</h3>
-            <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 25 March 19XX</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> www.example.com</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +123 456 7890</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Brooklyn, NY</li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 30</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Master</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>PhEmailone:</strong> email@example.com</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li>
-                </ul>
-              </div>
+            <div class="section-title">
+                <h2>About</h2>
+                <p>Brooklyn-born afro-latina with a passion for building and creating beautiful and functional applications.</p>
             </div>
-            <p>
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-            </p>
-          </div>
+            <div class="row">
+                <div class="col-lg-4 aos-init aos-animate" data-aos="fade-right" style={{"height": "30vh", "overflow": "hidden", "margin-left": "15px"}}>
+                    <img src={aboutImg} class="about_img" alt=""></img>
+                </div>
+                <div class="col-lg-8 pt-4 pt-lg-0 content aos-init aos-animate" data-aos="fade-left">
+                    <h3>Full Stack Software Engineer.</h3>
+                    <p class="font-italic">
+                        I aspired to have a career I was passionate about and never looked back.
+                    </p>
+                    <p>
+                        I'm a former Secretary of an elementary school in South Williamburg. I originally went to college for Accounting but decided to take some time to find a career path I was more passionate about. After extensive research I discovered that software engineering was a field that combined the analytical skills I’ve developed so far in my career, with my desire to build and create. Since then I discovered Pursuit, a software engineering fellowship, and have grown to appreciate all things full stack. 
+                    </p>
+                </div>
+            </div>
         </div>
-
-      </div>
 
         // <div className='AboutDiv'>
         //     <Element id="About"/>

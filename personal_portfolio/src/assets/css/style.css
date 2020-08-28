@@ -86,6 +86,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 200px;
   border: 8px solid #2c2f3f;
   object-fit: cover;
+  object-position: top;
 }
 
 #header .profile h1 {
@@ -169,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     color: #a8a9b4;
     /* padding: 9px 20px 10px 30px; */
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
     transition: 0.3s;
     font-size: 15px;
 }
@@ -196,11 +197,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #a8a9b4 !important;
   display: inline-table;
   padding: 12px 15px;
+  margin-bottom: 8px;
 }
 
-/* .linkA {
-  padding: 10px 10px 10px 10px;
-} */
+.linkA {
+  vertical-align: text-bottom;
+}
 
 .nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
   color: #149ddd;
@@ -244,13 +246,22 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  /* background: url("./../../ImgFiles/backgroundImg.jpeg"); */
+  /* background-size: cover; */
+  /* filter: blur(.9px) brightness(0.6) saturate(0.8); */
+}
+
+#backgroundImg {
+  width: 100%;
+  height: 100vh;
+  background: url("./../../ImgFiles/backgroundImg.jpeg") bottom;
   background-size: cover;
+  filter: blur(1.5px) brightness(0.5) saturate(0.8);
 }
 
 #hero:before {
-  content: "";
-  background: rgba(5, 13, 24, 0.3);
+  /* content: ""; */
+  /* background: rgba(5, 13, 24, 0.3); */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -263,6 +274,9 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 2;
   min-width: 300px;
+  position: absolute;
+  color: white;
+  top: 14%;
 }
 
 #hero h1 {
@@ -283,8 +297,9 @@ h1, h2, h3, h4, h5, h6 {
 #hero p span {
   color: #fff;
   padding-bottom: 4px;
-  letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  margin-left: 8px;
+  /* letter-spacing: 1px; */
+  /* border-bottom: 3px solid #149ddd; */
 }
 
 @media (min-width: 1024px) {
@@ -427,9 +442,11 @@ section {
 # Akills
 --------------------------------------------------------------*/
 .skills .progress {
-  height: 50px;
+  /* height: 50px; */
+  height: 0px;
   display: block;
   background: none;
+  transition: height ease-in-out .5s;
 }
 
 .skills .progress .skill {
@@ -458,6 +475,46 @@ section {
   background-color: #149ddd;
 }
 
+.skills-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.icon {
+  font-size: 40px;
+}
+
+.iconDiv {
+  text-align-last: center;
+  padding: 10px;
+  margin: 9px;
+  height: 84px;
+}
+
+.iconDiv:hover .icon{
+  color: #149ddd;
+}
+
+.iconDiv:hover .progress {
+  height: 20px;
+  transition: height ease-in-out .5s;
+}
+
+.skill {
+  /* color: #F5F8FC !important;
+  transition: color ease-in-out .5s; */
+  /* height: 0px;
+  transition: height ease-in-out 1s; */
+
+}
+
+.iconDiv:hover .skill {
+  /* color: #040b14 !important;
+  transition: color ease-in-out 1s; */
+  /* height: auto;
+  transition: height ease-in-out 1s; */
+}
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
@@ -558,10 +615,12 @@ section {
 }
 
 .portfolio .portfolio-wrap {
-  transition: 0.3s;
+  transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  height: 83%;
+  box-shadow: 5px 5px 9px darkgrey;
 }
 
 .portfolio .portfolio-wrap::before {
@@ -614,9 +673,68 @@ section {
   opacity: 1;
 }
 
+.portfolio-wrap:hover {
+  box-shadow: none;
+  transition: all ease-in-out .3s;
+}
+
 .portfolio .portfolio-wrap:hover .portfolio-links {
   opacity: 1;
   bottom: 0;
+}
+
+.project-name, .project-header {
+  z-index: 0 ;
+  color: transparent;
+  bottom: 270px;
+  font-size: xxx-large;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  transition: all ease-in-out .3s;
+}
+
+.portfolio-wrap:hover .project-header {
+  color: white;
+  z-index: 1 ;
+  transition: all ease-in-out .3s;
+}
+
+.github-name, .live-site {
+  transition: all ease-in-out .5s;
+  width: 0px;
+  font-size: medium;
+  vertical-align: 6px;
+  margin-left: 6%;
+  display: inline-flex;
+  overflow: hidden;
+  margin-bottom: -15px;
+  white-space: nowrap;
+}
+
+.venobox:hover .github-name {
+  width: 25%;
+  vertical-align: 6px;
+  transition: all ease-in-out .5s;
+  font-size: medium;
+  margin-left: 6%;
+  display: inline-flex;
+  overflow: hidden;
+}
+
+/* .liveA {
+  width: 100%;
+} */
+
+.liveA:hover .live-site {
+  width: 31%;
+  vertical-align: 6px;
+  transition: all ease-in-out .5s;
+  font-size: medium;
+  margin-left: 6%;
+  display: inline-flex;
+  overflow: hidden;
+  /* position: absolute; */
 }
 
 /*--------------------------------------------------------------
@@ -769,9 +887,9 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact {
+/* .contact {
   padding-bottom: 130px;
-}
+} */
 
 .contact .info {
   padding: 30px;
