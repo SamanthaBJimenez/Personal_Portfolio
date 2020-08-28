@@ -1,7 +1,7 @@
 import React from 'react';
-import project1 from './../ImgFiles/IMG_7873.jpeg';
-import project2 from './../ImgFiles/IMG_4717.jpeg';
-import project3 from './../ImgFiles/aboutImg.jpeg';
+import project1 from './../ImgFiles/Kitty.jpeg';
+import project2 from './../ImgFiles/hiking.jpeg';
+import project3 from './../ImgFiles/food2.jpeg';
 
 const Projects = () => {
     return (
@@ -15,8 +15,8 @@ const Projects = () => {
               <div class="portfolio-wrap">
                 <img src={project1} class="img-fluid" alt=""/>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox vbox-item" title="App 1"><i class="bx bxl-github"></i><p class='github-name'>github</p></a>
-                  <a href="portfolio-details.html" title="More Details" class='liveA'><i class="bx bx-window-alt"></i><p class="live-site">live site</p></a>
+                  <a href="https://github.com/Zoovio-app/zoovio" target="_blank" data-gall="portfolioGallery" class="venobox vbox-item" title="App 1"><i class="bx bxl-github"></i><p class='github-name'>github</p></a>
+                  <a href="https://zoovio.netlify.app/" target="_blank" title="More Details" class='liveA'><i class="bx bx-window-alt"></i><p class="live-site">live site</p></a>
                 </div>
                 <div>
                   <p class='project-header'>ZooVio</p>
@@ -27,8 +27,8 @@ const Projects = () => {
             <div class="portfolio-wrap">
               <img src={project2} class="img-fluid" alt=""/>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox vbox-item" title="Web 3"><i class="bx bxl-github"></i><p class='github-name'>github</p></a>
-                <a href="portfolio-details.html" title="More Details" class='liveA'><i class="bx bx-window-alt"></i><p class='live-site'>live site</p></a>
+                <a href="https://github.com/SamanthaBJimenez/my-ig" data-gall="portfolioGallery" class="venobox vbox-item" title="Web 3"><i class="bx bxl-github"></i><p class='github-name'>github</p></a>
+                <a href="https://my-ig.netlify.app/" title="More Details" class='liveA'><i class="bx bx-window-alt"></i><p class='live-site'>live site</p></a>
               </div>
               <div>
                 <p class='project-header'>Finstagram</p>
@@ -39,8 +39,8 @@ const Projects = () => {
             <div class="portfolio-wrap">
               <img src={project3} class="img-fluid" alt=""/>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox vbox-item" title="App 2"><i class="bx bxl-github"></i><p class='github-name'>github</p></a>
-                <a href="portfolio-details.html" title="More Details" class='liveA'><i class="bx bx-window-alt"></i><p class='live-site'>live site</p></a>
+                <a href="https://github.com/SamanthaBJimenez/tastebuds" data-gall="portfolioGallery" class="venobox vbox-item" title="App 2"><i class="bx bxl-github"></i><p class='github-name'>github</p></a>
+                <a title="More Details" class='liveA'><i class="bx bx-window-close"></i><p class='live-site'>not live</p></a>
               </div>
               <div>
                 <p class='project-header'>Tastebuds</p>

@@ -16,7 +16,7 @@ const Landing = () => {
                     <p style={{"display": "inline-flex"}}>I'm a <span style={{"border-bottom": "3px solid #149ddd"}} class="typed" >
                         <TypistLoop interval={1000}>
                             {[
-                            'Engineer',
+                            'Web Developer',
                             'Designer',
                             'Creator',
                             'Collaborator'

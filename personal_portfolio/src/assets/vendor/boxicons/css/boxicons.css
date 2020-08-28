@@ -26,6 +26,7 @@
     speak: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    vertical-align: -3px;
 }
 .bx-ul
 {

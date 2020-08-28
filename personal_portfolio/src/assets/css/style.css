@@ -360,6 +360,16 @@ section {
   margin-bottom: 0;
 }
 
+.activeNav {
+  color: #fff !important;
+  transition: 0s
+}
+
+.activeNav .bx {
+  color: #00a6eb;
+  transition: 0s;
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -619,7 +629,7 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  height: 83%;
+  height: 75%;
   box-shadow: 5px 5px 9px darkgrey;
 }
 
@@ -686,7 +696,7 @@ section {
 .project-name, .project-header {
   z-index: 0 ;
   color: transparent;
-  bottom: 270px;
+  bottom: 215px;
   font-size: xxx-large;
   position: relative;
   display: flex;
@@ -887,9 +897,9 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-/* .contact {
-  padding-bottom: 130px;
-} */
+.contact {
+  margin-bottom: 10px;
+}
 
 .contact .info {
   padding: 30px;

@@ -31,7 +31,7 @@ function App() {
       <style>
         @import url('https://fonts.googleapis.com/css?family=Maven+Pro&display=swap');
       </style>  
-      <body class="vsc-initialized" data-aos-easing="ease-in-out-back" data-aos-duration="1000" data-aos-delay="0">
+      <body class="vsc-initialized" data-aos-easing="ease-in-out-back" data-aos-duration="1000" data-aos-delay="0" data-spy="scroll" data-target="#header" data-offset="50">
         <header id="header">
           <div class="d-flex flex-column">
             <div class="profile">
@@ -46,45 +46,49 @@ function App() {
             </div>
             <nav class="nav-menu">
               <ul>
-                <li class="active menuLink"><a href="index.html"><i class="bx bx-home"></i> <span class="linkA">Home</span></a></li>
-                <li class=""><a class="menuLink" /*href="#about"*/><span><i class="bx bx-user"></i><Link class="linkA" onClick={() => scroller.scrollTo('about', {
+                <li class=""><a class="menuLink"><span><Link to='landing' class="linkA"  activeClass='activeNav' spy={true} smooth={true} duration={500} onClick={() => scroller.scrollTo('landing', {
                   duration: 2500,
                   delay: 100,
                   smooth: true})
-                }>About</Link></span></a></li>
-                <li><a class="menuLink" /*href="#skills"*/><span><i class="bx bx-slider"></i><Link class="linkA" onClick={() => scroller.scrollTo('skills', {
+                }><i class="bx bx-home"></i>Home</Link></span></a></li>
+                <li class=""><a class="menuLink"><span><Link to='about' class="linkA"  activeClass='activeNav' spy={true} smooth={true} duration={500} onClick={() => scroller.scrollTo('about', {
                   duration: 2500,
                   delay: 100,
                   smooth: true})
-                }>Skills</Link></span></a></li>
-                <li><a class="menuLink" /*href="#projects"*/><span><i class="bx bx-collection"></i><Link class="linkA" onClick={() => scroller.scrollTo('portfolio', {
+                }><i class="bx bx-user"></i>About</Link></span></a></li>
+                <li><a class="menuLink"><span><Link to='skills' class="linkA"  activeClass='activeNav' spy={true} smooth={true} duration={500} onClick={() => scroller.scrollTo('skills', {
                   duration: 2500,
                   delay: 100,
                   smooth: true})
-                }>Portfolio</Link></span></a></li>
-                <li><a class="menuLink" /*href="#portfolio"*/><span><i class="bx bx-envelope"></i>  <Link class="linkA"  onClick={() => scroller.scrollTo('contact', {
+                }><i class="bx bx-slider"></i>Skills</Link></span></a></li>
+                <li><a class="menuLink"><span><Link to='portfolio' class="linkA"  activeClass='activeNav' spy={true} smooth={true} duration={500} onClick={() => scroller.scrollTo('portfolio', {
                   duration: 2500,
                   delay: 100,
                   smooth: true})
-                }>Contact</Link></span></a></li>
+                }><i class="bx bx-collection"></i>Portfolio</Link></span></a></li>
+                <li><a class="menuLink" ><span><Link to='contact' class="linkA" activeClass='activeNav' spy={true} smooth={true} duration={500} onClick={() => scroller.scrollTo('contact', {
+                  duration: 2500,
+                  delay: 100,
+                  smooth: true})
+                }><i class="bx bx-envelope"></i>Contact</Link></span></a></li>
               <li><a class="menuLink" href="https://drive.google.com/file/d/1aZu3ijxlOe350sGUkNFCc11DT6Jla9dc/view?usp=sharing" target="_blank"><i class="bx bx-file"></i> <span>Resume</span></a></li>
             </ul>             
           </nav>
         </div>
       </header>
-      <Element><Landing/></Element>
+      <Element name="landing"><Landing/></Element>
         <main id="main">
           <section id="about" class="about">
-            <About/>
+            <Element name='about'><About/></Element>
           </section>
           <section id="skills" class="skills section-bg">
-            <Skills/>
+            <Element name='skills'><Skills/></Element>
           </section>
           <section id="portfolio" class="portfolio section-bg">
-            <Portfolio/>
+            <Element name='portfolio'><Portfolio/></Element>
           </section>
           <section id="contact" class="contact">
-            <ContactLinks/>
+            <Element name='contact'><ContactLinks/></Element>
           </section>
         </main>
       </body>
