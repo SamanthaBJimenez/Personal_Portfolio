@@ -7199,6 +7199,8 @@ button.bg-dark:focus {
 .flex-column {
   -ms-flex-direction: column !important;
   flex-direction: column !important;
+  height: 100% !important;
+  justify-content: space-evenly !important;
 }
 
 .flex-row-reverse {
