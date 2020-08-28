@@ -8,13 +8,13 @@ import './assets/vendor/bootstrap/css/bootstrap-reboot.css'
 import About from './components/About';
 import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
-import ContactLinks from './components/ContactLinks';
 // import Error from './components/Error';
 import Landing from './components/Landing';
 import Footer from './components/Footer';
 import avatar from './ImgFiles/avatar.jpeg';
 // import * as Scroll from 'react-scroll';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import Contact from './components/Contact';
 
 
 function App() {
@@ -88,7 +88,7 @@ function App() {
             <Element name='portfolio'><Portfolio/></Element>
           </section>
           <section id="contact" class="contact">
-            <Element name='contact'><ContactLinks/></Element>
+            <Element name='contact'><Contact/></Element>
           </section>
         </main>
       </body>

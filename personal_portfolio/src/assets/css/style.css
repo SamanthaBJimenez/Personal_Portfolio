@@ -629,7 +629,7 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  height: 75%;
+  height: 71%;
   box-shadow: 5px 5px 9px darkgrey;
 }
 
@@ -680,7 +680,7 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 .portfolio-wrap:hover {
@@ -693,10 +693,15 @@ section {
   bottom: 0;
 }
 
+.portfolio .portfolio-wrap:hover .img-fluid {
+  opacity: .5;
+  transition: all .3s;
+}
+
 .project-name, .project-header {
   z-index: 0 ;
   color: transparent;
-  bottom: 215px;
+  bottom: 175px;
   font-size: xxx-large;
   position: relative;
   display: flex;
@@ -705,7 +710,7 @@ section {
 }
 
 .portfolio-wrap:hover .project-header {
-  color: white;
+  color: #040B15;
   z-index: 1 ;
   transition: all ease-in-out .3s;
 }

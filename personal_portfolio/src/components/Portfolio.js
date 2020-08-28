@@ -1,7 +1,7 @@
 import React from 'react';
-import project1 from './../ImgFiles/Kitty.jpeg';
-import project2 from './../ImgFiles/hiking.jpeg';
-import project3 from './../ImgFiles/food2.jpeg';
+import project1 from './../ImgFiles/ZooVio.png';
+import project2 from './../ImgFiles/Finstagram.png';
+import project3 from './../ImgFiles/Tastebuds.png';
 
 const Projects = () => {
     return (
