@@ -1375,9 +1375,9 @@ pre code {
     /* max-width: 58.333333%; */
   /* } */
   .col-lg-8 {
-    -ms-flex: 0 0 64.666667%;
-    flex: 0 0 64.666667%;
-    max-width: 64.666667%;
+    -ms-flex: 0 0 60.666667%;
+    flex: 0 0 60.666667%;
+    max-width: 60.666667%;
   }
   .col-lg-9 {
     -ms-flex: 0 0 75%;
@@ -7084,9 +7084,13 @@ button.bg-dark:focus {
   }
 }
 
+
 @media (min-width: 1200px) {
   .d-xl-none {
     display: none !important;
+  }
+  #header{
+    display: block;
   }
   .d-xl-inline {
     display: inline !important;
@@ -7199,8 +7203,8 @@ button.bg-dark:focus {
 .flex-column {
   -ms-flex-direction: column !important;
   flex-direction: column !important;
-  height: 100% !important;
-  justify-content: space-evenly !important;
+  /* height: 100% !important;
+  justify-content: space-evenly !important; */
 }
 
 .flex-row-reverse {

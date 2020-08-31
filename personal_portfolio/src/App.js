@@ -5,6 +5,8 @@ import './assets/vendor/boxicons/css/boxicons.min.css'
 import './assets/vendor/aos/aos.css'
 import './assets/vendor/bootstrap/css/bootstrap.css'
 import './assets/vendor/bootstrap/css/bootstrap-reboot.css'
+// import './assets/vendor/bootstrap/css/bootstrap.min.css'
+import './assets/vendor/icofont/icofont.min.css';
 import About from './components/About';
 import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
@@ -19,9 +21,25 @@ import Contact from './components/Contact';
 
 function App() {
 
+  const collapse = () => {
+    let header = document.getElementById("header");
+    if (header.style.display !== "block") {
+      header.style.display = "block";
+    } else {
+      header.style.display = "";
+    }
+  }
+
   return (
     <div className="App">
       <script src="https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/"></script>
+      {/* <script src="src/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> */}
+      {/* <script src="src/assets/vendor/jquery/jquery.min.js"></script> */}
+
+      {/* <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/> */}
+  <script src='./assets/js/main'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
       <link rel="stylesheet" href="https://bootstrapmade.com/demo/assets/css/style.css"></link>
       <link rel="stylesheet" href="https://bootstrapmade.com/demo/assets/css/fontello.css"></link>
       <link rel="stylesheet" href="https://bootstrapmade.com/demo/assets/css/normalize.css"></link>
@@ -32,6 +50,20 @@ function App() {
         @import url('https://fonts.googleapis.com/css?family=Maven+Pro&display=swap');
       </style>  
       <body class="vsc-initialized" data-aos-easing="ease-in-out-back" data-aos-duration="1000" data-aos-delay="0" data-spy="scroll" data-target="#header" data-offset="50">
+        <button
+          class="mobile-nav-toggle d-xl-none"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onClick={collapse}
+        >
+          <span class="navbar-toggler-icon"><i class="icofont-navigation-menu"></i></span>
+        </button>
+        <div class="show collapse mobile-nav-active" id="navbarSupportedContent">
+
         <header id="header">
           <div class="d-flex flex-column">
             <div class="profile">
@@ -75,7 +107,22 @@ function App() {
             </ul>             
           </nav>
         </div>
+        {/* <button
+          class="mobile-nav-toggle d-xl-none"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onClick={collapse}
+        >
+          <span class="navbar-toggler-icon"><i class="icofont-navigation-menu"></i></span>
+        </button> */}
       </header>
+
+
+      </div>
       <Element name="landing"><Landing/></Element>
         <main id="main">
           <section id="about" class="about">
@@ -92,6 +139,18 @@ function App() {
           </section>
         </main>
       </body>
+      {/* <script src="assets/vendor/jquery/jquery.min.js"></script> */}
+      {/* <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> */}
+      {/* <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> */}
+      {/* <script src="assets/vendor/php-email-form/validate.js"></script> */}
+      {/* <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script> */}
+      {/* <script src="assets/vendor/counterup/counterup.min.js"></script> */}
+      {/* <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> */}
+      {/* <script src="assets/vendor/venobox/venobox.min.js"></script> */}
+      {/* <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script> */}
+      {/* <script src="assets/vendor/typed.js/typed.min.js"></script> */}
+      {/* <script src="assets/vendor/aos/aos.js"></script> */}
+      {/* <script src="assets/js/main.js"></script> */}
     </div>
   );
 }

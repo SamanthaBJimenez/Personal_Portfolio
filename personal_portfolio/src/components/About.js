@@ -15,7 +15,7 @@ const About = () => {
                 <p>Brooklyn-born afro-latina with a passion for building and creating beautiful and functional applications.</p>
             </div>
             <div class="row">
-                <div class="col-lg-4 aos-init aos-animate" data-aos="fade-right" style={{"height": "30vh", "overflow": "hidden", "margin-left": "15px"}}>
+                <div class="col-lg-4 aos-init aos-animate" data-aos="fade-right" style={{"height": "30vh", "overflow": "hidden", "margin-left": "15px", "margin-right": "15px"}}>
                     <img src={aboutImg} class="about_img" alt=""></img>
                 </div>
                 <div class="col-lg-8 pt-4 pt-lg-0 content aos-init aos-animate" data-aos="fade-left">
