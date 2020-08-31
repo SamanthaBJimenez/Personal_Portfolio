@@ -7,7 +7,7 @@ const Skills = () => {
                 <h2>Skills</h2>
                 <p>These are a few of the technical competencies I've developed so far on my tech journey. I look forward to growing my collection of skills.</p>
             </div>
-            <div class="skills-content">
+            <div class="skills-content row">
                 <div className='iconDiv'>
                     <i className='devicon-javascript-plain icon'></i>
                     <div class="progress">
