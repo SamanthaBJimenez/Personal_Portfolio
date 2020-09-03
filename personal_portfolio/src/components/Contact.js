@@ -59,7 +59,7 @@ const Contact = () => {
                             <div class="sent-message">Your message has been sent. Thank you!</div>
                         </div>
                         <div class="text-center">
-                        <button type="submit">Send Message</button>
+                            <button type="submit">Send Message</button>
                         </div>
                     </form>
                     <ToastContainer
@@ -74,7 +74,6 @@ const Contact = () => {
                         pauseOnFocusLoss
                         draggable
                         pauseOnHover
-                        // style={{"width": "240px", "border-radius": "5px"}}
                     />
                 </div>
             </div>

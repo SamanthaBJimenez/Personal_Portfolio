@@ -12,30 +12,6 @@ html {
     --primary: #d58936 !important;
 }
 
-/* .Navbar {
-    list-style-type: none;
-    padding: 10px 0px 0px 0px;
-    margin: 0px 0px;
-    position: fixed;
-    width: 100%;
-    height: 5%;
-    overflow: hidden;
-    background-color: #043322; */
-    /* color: white; */
-    /* color: rgb(242, 239, 234, .6);
-    display: flex;
-    opacity: 0.6;
-    z-index: 1; */
-    /* text-align-last: end; */
-    /* column-gap: 14px; */
-    /* justify-content: flex-end; */
-/* } */
-
-/* .navLink {
-    margin: 0 14px;
-    cursor: pointer;
-} */
-
 .nav-link {
     color: rgb(242, 239, 234, .6);
 }
@@ -68,7 +44,6 @@ html {
     z-index: 1;
     text-align: right;
     margin-right: 3%; 
-    /* font-size: 5rem; */
     z-index: 1;
     line-height: .5;
 }
@@ -82,21 +57,13 @@ html {
     -webkit-background-clip: text;
     background-clip: text;
     padding: 4rem 8rem 2rem 8rem;
-    /* margin: auto; */
     line-height: .5;
     margin: 2px auto -35px auto;
     z-index: 2;
 }
 
 .display-2a {
-    /* font-family: modernline; */
-    /* filter: brightness(75%); */
     display: unset;
-    /* background: -webkit-linear-gradient(transparent, transparent), -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text; */
-    /* padding: 2rem 8rem; */
     margin: auto;
     line-height: .5;
     font-size: x-large;
