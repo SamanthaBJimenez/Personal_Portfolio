@@ -134,7 +134,7 @@ function App() {
           <section id="portfolio" class="portfolio section-bg">
             <Element name='portfolio'><Portfolio/></Element>
           </section>
-          <section id="contact" class="contact">
+          <section id="contact" class="contact" style={{"padding-top": "70px"}}>
             <Element name='contact'><Contact/></Element>
           </section>
         </main>
