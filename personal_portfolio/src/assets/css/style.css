@@ -641,7 +641,8 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  height: 71%;
+  height: 67%;
+  width: 100%;
   box-shadow: 5px 5px 9px darkgrey;
 }
 
