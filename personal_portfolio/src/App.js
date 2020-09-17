@@ -91,7 +91,7 @@ function App() {
                     delay: 100,
                     smooth: true})
                   }><i class="bx bx-envelope"></i>Contact</Link></span></a></li>
-                <li><a class="menuLink" href="https://drive.google.com/file/d/1aZu3ijxlOe350sGUkNFCc11DT6Jla9dc/view?usp=sharing" target="_blank"><i class="bx bx-file"></i> <span>Resume</span></a></li>
+                <li><a class="menuLink" href="https://drive.google.com/file/d/1aZu3ijxlOe350sGUkNFCc11DT6Jla9dc/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="bx bx-file"></i> <span>Resume</span></a></li>
               </ul>             
             </nav>
           </div>
