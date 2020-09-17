@@ -15,8 +15,8 @@ const Projects = () => {
               <div class="portfolio-wrap">
                 <img src={project1} class="img-fluid" alt=""/>
                 <div class="portfolio-links">
-                  <a href="https://github.com/Zoovio-app/zoovio" target="_blank" data-gall="portfolioGallery" class="venobox vbox-item" title="App 1"><i class="bx bxl-github"></i><p class='github-name'>github</p></a>
-                  <a href="https://zoovio.netlify.app/" target="_blank" title="More Details" class='liveA'><i class="bx bx-window-alt"></i><p class="live-site">live site</p></a>
+                  <a href="https://github.com/Zoovio-app/zoovio" target="_blank" rel="noopener noreferrer" data-gall="portfolioGallery" class="venobox vbox-item" title="App 1"><i class="bx bxl-github"></i><p class='github-name'>github</p></a>
+                  <a href="https://zoovio.netlify.app/" target="_blank" rel="noopener noreferrer" title="More Details" class='liveA'><i class="bx bx-window-alt"></i><p class="live-site">live site</p></a>
                 </div>
                 <div>
                   <p class='project-header'>ZooVio</p>

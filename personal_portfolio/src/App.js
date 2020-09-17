@@ -10,9 +10,8 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
 import Landing from './components/Landing';
-import Footer from './components/Footer';
 import avatar from './ImgFiles/avatar.jpeg';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import { Link, Element, animateScroll as scroller } from 'react-scroll';
 import Contact from './components/Contact';
 
 function App() {
@@ -59,10 +58,10 @@ function App() {
                 <img src={avatar} alt="" class="img-fluid rounded-circle"/>
                 <h1 class="text-light"><a href="index.html">Samantha Jimenez</a></h1>
                 <div class="social-links mt-3 text-center">
-                  <a href='https://github.com/SamanthaBJimenez' target="_blank" class="github"><i class="bx bxl-github"></i></a>
-                  <a href='mailto:SamanthaB.Jimenez@gmail.com' target="_blank" class="google"><i class="bx bxl-google"></i></a>
-                  <a href='https://www.linkedin.com/in/samanthabjimenez/' target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                  <a href='https://twitter.com/MannyJimenez_' target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+                  <a href='https://github.com/SamanthaBJimenez' target="_blank" rel="noopener noreferrer" class="github"><i class="bx bxl-github"></i></a>
+                  <a href='mailto:SamanthaB.Jimenez@gmail.com' target="_blank" rel="noopener noreferrer" class="google"><i class="bx bxl-google"></i></a>
+                  <a href='https://www.linkedin.com/in/samanthabjimenez/' target="_blank" rel="noopener noreferrer" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                  <a href='https://twitter.com/MannyJimenez_' target="_blank" rel="noopener noreferrer" class="twitter"><i class="bx bxl-twitter"></i></a>
                 </div>
               </div>
               <nav class="nav-menu">

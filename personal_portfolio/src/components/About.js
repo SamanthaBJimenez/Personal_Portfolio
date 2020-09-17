@@ -1,8 +1,5 @@
 import React from 'react';
-import avatar from './../ImgFiles/avatar.jpeg';
 import aboutImg from './../ImgFiles/about.jpeg';
-import Footer from './Footer';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 const About = () => {
     return (

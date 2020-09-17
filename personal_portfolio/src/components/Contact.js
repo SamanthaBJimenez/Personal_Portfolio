@@ -35,7 +35,7 @@ const Contact = () => {
             </div>
             <div class="row aos-init aos-animate" data-aos="fade-in">
                 <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-                    <form onSubmit={handleSubmit} role="form" class="php-email-form">
+                    <form onSubmit={handleSubmit} class="php-email-form">
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="name">Your Name</label>
