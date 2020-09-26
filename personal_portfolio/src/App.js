@@ -11,7 +11,7 @@ import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
 import Landing from './components/Landing';
 import avatar from './ImgFiles/avatar.jpeg';
-import { Link, Element, animateScroll as scroller } from 'react-scroll';
+import { Link, Element } from 'react-scroll';
 import Contact from './components/Contact';
 
 function App() {
@@ -66,38 +66,18 @@ function App() {
               </div>
               <nav class="nav-menu">
                 <ul>
-                  <li class=""><a class="menuLink"><span><Link to='landing' class="linkA"  activeClass='activeNav' spy={true} smooth={true} duration={500} onClick={() => scroller.scrollTo('landing', {
-                    duration: 2500,
-                    delay: 100,
-                    smooth: true})
-                  }><i class="bx bx-home"></i>Home</Link></span></a></li>
-                  <li class=""><a class="menuLink"><span><Link to='about' class="linkA"  activeClass='activeNav' spy={true} smooth={true} duration={500} onClick={() => scroller.scrollTo('about', {
-                    duration: 2500,
-                    delay: 100,
-                    smooth: true})
-                  }><i class="bx bx-user"></i>About</Link></span></a></li>
-                  <li><a class="menuLink"><span><Link to='skills' class="linkA"  activeClass='activeNav' spy={true} smooth={true} duration={500} onClick={() => scroller.scrollTo('skills', {
-                    duration: 2500,
-                    delay: 100,
-                    smooth: true})
-                  }><i class="bx bx-slider"></i>Skills</Link></span></a></li>
-                  <li><a class="menuLink"><span><Link to='portfolio' class="linkA"  activeClass='activeNav' spy={true} smooth={true} duration={500} onClick={() => scroller.scrollTo('portfolio', {
-                    duration: 2500,
-                    delay: 100,
-                    smooth: true})
-                  }><i class="bx bx-collection"></i>Portfolio</Link></span></a></li>
-                  <li><a class="menuLink" ><span><Link to='contact' class="linkA" activeClass='activeNav' spy={true} smooth={true} duration={500} onClick={() => scroller.scrollTo('contact', {
-                    duration: 2500,
-                    delay: 100,
-                    smooth: true})
-                  }><i class="bx bx-envelope"></i>Contact</Link></span></a></li>
-                <li><a class="menuLink" href="https://drive.google.com/file/d/1aZu3ijxlOe350sGUkNFCc11DT6Jla9dc/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="bx bx-file"></i> <span>Resume</span></a></li>
-              </ul>             
-            </nav>
-          </div>
-        </header>
-      </div>
-      <Element name="landing"><Landing/></Element>
+                  <li><a class="menuLink"><span><Link to='landing' class="linkA"  activeClass='activeNav' spy={true} smooth={true} duration={500}><i class="bx bx-home"></i>Home</Link></span></a></li>
+                  <li><a class="menuLink"><span><Link to='about' class="linkA"  activeClass='activeNav' spy={true} smooth={true} duration={500}><i class="bx bx-user"></i>About</Link></span></a></li>
+                  <li><a class="menuLink"><span><Link to='skills' class="linkA"  activeClass='activeNav' spy={true} smooth={true} duration={500}><i class="bx bx-slider"></i>Skills</Link></span></a></li>
+                  <li><a class="menuLink"><span><Link to='portfolio' class="linkA"  activeClass='activeNav' spy={true} smooth={true} duration={500}><i class="bx bx-collection"></i>Portfolio</Link></span></a></li>
+                  <li><a class="menuLink" ><span><Link to='contact' class="linkA" activeClass='activeNav' spy={true} smooth={true} duration={500}><i class="bx bx-envelope"></i>Contact</Link></span></a></li>
+                  <li><a class="menuLink" href="https://drive.google.com/file/d/1aZu3ijxlOe350sGUkNFCc11DT6Jla9dc/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="bx bx-file"></i> <span>Resume</span></a></li>
+                </ul>             
+              </nav>
+            </div>
+          </header>
+        </div>
+        <Element name="landing"><Landing/></Element>
         <main id="main">
           <section id="about" class="about">
             <Element name='about'><About/></Element>
