@@ -27,8 +27,8 @@ const Projects = () => {
             <div class="portfolio-wrap">
               <img src={project2} class="img-fluid" alt=""/>
               <div class="portfolio-links">
-                <a href="https://github.com/SamanthaBJimenez/my-ig" data-gall="portfolioGallery" class="venobox vbox-item" title="Web 3"><i class="bx bxl-github"></i><p class='github-name'>github</p></a>
-                <a href="https://my-ig.netlify.app/" title="More Details" class='liveA'><i class="bx bx-window-alt"></i><p class='live-site'>live site</p></a>
+                <a href="https://github.com/SamanthaBJimenez/my-ig" target="_blank" rel="noopener noreferrer" data-gall="portfolioGallery" class="venobox vbox-item" title="Web 3"><i class="bx bxl-github"></i><p class='github-name'>github</p></a>
+                <a href="https://my-ig.netlify.app/" target="_blank" rel="noopener noreferrer" title="More Details" class='liveA'><i class="bx bx-window-alt"></i><p class='live-site'>live site</p></a>
               </div>
               <div>
                 <p class='project-header'>Finstagram</p>
@@ -39,8 +39,8 @@ const Projects = () => {
             <div class="portfolio-wrap">
               <img src={project3} class="img-fluid" alt=""/>
               <div class="portfolio-links">
-                <a href="https://github.com/SamanthaBJimenez/tastebuds" data-gall="portfolioGallery" class="venobox vbox-item" title="App 2"><i class="bx bxl-github"></i><p class='github-name'>github</p></a>
-                <a title="More Details" class='liveA'><i class="bx bx-window-close"></i><p class='live-site'>not live</p></a>
+                <a href="https://github.com/SamanthaBJimenez/tastebuds" target="_blank" rel="noopener noreferrer" data-gall="portfolioGallery" class="venobox vbox-item" title="App 2"><i class="bx bxl-github"></i><p class='github-name'>github</p></a>
+                <a href="https://tastebuds.netlify.app/" target="_blank" rel="noopener noreferrer" title="More Details" class='liveA'><i class="bx bx-window-alt"></i><p class='live-site'>live site</p></a>
               </div>
               <div>
                 <p class='project-header'>Tastebuds</p>
