@@ -279,7 +279,7 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 300px;
   position: absolute;
   color: white;
-  top: 70%;
+  top: 70vh;
 }
 
 #hero h1 {
