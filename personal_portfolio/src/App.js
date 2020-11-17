@@ -18,9 +18,11 @@ function App() {
   const [currentTheme, setTheme] = useState("blueTheme");
   const [currentThemeObj, setThemeObj] = useState({
     "--header": "#040b14",
+    "--title-text": "#173b6c",
     "--highlight": "#149ddd",
-    "--lowlight": "#2c2f3f",
-    "--unselected": "#6f7180",
+    "--shadow": "#2c2f3f",
+    "--unselected-dark": "#6f7180",
+    "--unselected-light": "#a8a9b4",
     "--shadow-background": "#f5f8fd",
   });
 
@@ -35,29 +37,50 @@ function App() {
 
   const blueThemeObj = {
     "--header": "#040b14",
+    "--title-text": "#173b6c",
     "--highlight": "#149ddd",
-    "--lowlight": "#2c2f3f",
-    "--unselected": "#6f7180",
+    "--lowlight": "rgba(20, 157, 221, 0.75)",
+    "--shadow": "#2c2f3f",
+    "--unselected-dark": "#6f7180",
+    "--unselected-light": "#a8a9b4",
     "--shadow-background": "#f5f8fd",
   }
 
   const brownThemeObj = {
-    "--header": "#573d1c",
-    "--highlight": "#e3c567",
-    "--lowlight": "#c896be",
-    "--unselected": "#6f7180",
-    "--shadow-background": "#f5f8fd",
+    "--header": "#1F160A",
+    "--title-text": "#5C401E",
+    // "--highlight": "#e3c567",
+    // "--highlight": "#CFA526",
+    "--highlight": "#D9AF30",
+    "--lowlight" : "rgba(227, 197, 103, 0.75)",
+    // "--shadow": "#c8963e",
+    "--shadow": "#4D3719",
+    "--unselected-dark": "#7A5E3E",
+    "--unselected-light": "rgba(247, 237, 222, .5)",
+    "--shadow-background": "rgb(251, 248, 245)",
+  }
+
+  const greenThemeObj = {
+    "--header": "#01200F",
+    "--title-text": "#023C1C",
+    "--highlight": "#B2CC3E",
+    "--lowlight": "rgba(178, 204, 62, 0.75)",
+    "--shadow": "#45503B",
+    "--unselected-dark": "rgba(141, 160, 126, .9)",
+    "--unselected-light": "rgba(141, 160, 126, .8)",
+    "--shadow-background": "#F7F7F2",
   }
 
   const changeTheme = (e) => {
-    debugger;
     setTheme(e.target.value);
+    // e.target.checked = true;
     if(e.target.value === 'blueTheme') {
       setThemeObj(blueThemeObj)
     } else if(e.target.value === 'brownTheme') {
       setThemeObj(brownThemeObj);
+    } else if(e.target.value === 'greenTheme') {
+      setThemeObj(greenThemeObj);
     }
-    // applyTheme();
   }
 
   useEffect(() => {
@@ -65,10 +88,8 @@ function App() {
   }, [currentTheme, currentThemeObj])
 
   const applyTheme = () => {
-    debugger;
     Object.keys(currentThemeObj).map(key => {
       const value = currentThemeObj[key];
-      // debugger;
       document.documentElement.style.setProperty(key, value);
     });
   }
@@ -123,13 +144,14 @@ function App() {
                 </ul>             
               </nav>
               <div class="wrapper">
+              <h8 className='theme_title'>Themes:</h8>
                 <div class="toggle_radio">
-                  <input type="radio" class="toggle_option" id="first_toggle" name="toggle_option" onClick={changeTheme}/>
-                  <input type="radio" checked class="toggle_option" id="second_toggle" name="toggle_option" value="blueTheme" onClick={changeTheme}/>
-                  <input type="radio" class="toggle_option" id="third_toggle" name="toggle_option" value="brownTheme" onClick={changeTheme}/>
-                  <label for="first_toggle"><p>First</p></label>
-                  <label for="second_toggle"><p>Second</p></label>
-                  <label for="third_toggle"><p>Third</p></label>
+                 {currentTheme === 'blueTheme' ? <input type="radio" class="toggle_option" id="first_toggle" name="toggle_option" value="blueTheme" onClick={changeTheme} checked/> : <input type="radio" class="toggle_option" id="first_toggle" name="toggle_option" value="blueTheme" onClick={changeTheme}/>}
+                 {currentTheme === 'brownTheme' ? <input type="radio" class="toggle_option" id="second_toggle" name="toggle_option" value="brownTheme" onClick={changeTheme} checked/> : <input type="radio" class="toggle_option" id="second_toggle" name="toggle_option" value="brownTheme" onClick={changeTheme}/>}
+                 {currentTheme === 'greenTheme' ? <input type="radio" class="toggle_option" id="third_toggle" name="toggle_option" value="greenTheme" onClick={changeTheme} checked/> : <input type="radio" class="toggle_option" id="third_toggle" name="toggle_option" value="greenTheme" onClick={changeTheme}/>}
+                  <label for="first_toggle"><p>Blue</p></label>
+                  <label for="second_toggle"><p>Brown</p></label>
+                  <label for="third_toggle"><p>Green</p></label>
                   <div class="toggle_option_slider"></div>
                 </div>
               </div>
