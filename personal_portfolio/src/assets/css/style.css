@@ -1,8 +1,11 @@
 :root {
   --header:#040b14;
+  --title-text: #173b6c;
   --highlight: #149ddd;
-  --lowlight: #2c2f3f;
-  --unselected: #6f7180;
+  --lowlight: rgba(20, 157, 221, 0.75);
+  --shadow: #2c2f3f;
+  --unselected-dark: #6f7180;
+  --unselected-light: #a8a9b4;
   --shadow-background: #f5f8fd;
 }
 
@@ -89,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 200px;
   height: 200px;
   /* border: 8px solid #2c2f3f; */
-  border: 8px solid var(--lowlight);
+  border: 8px solid var(--shadow);
   object-fit: cover;
   object-position: top;
 }
@@ -112,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: var(--lowlight);
+  background: var(--shadow);
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -173,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
 
   display: inline-block;
     align-items: center;
-    color: #a8a9b4;
+    color: var(--unselected-light);
     /* padding: 9px 20px 10px 30px; */
     /* margin-bottom: 8px; */
     transition: 0.3s;
@@ -183,7 +186,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a i {
   font-size: 24px;
   padding-right: 8px;
-  color: var(--unselected);
+  color: var(--unselected-dark);
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
@@ -200,7 +203,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .menuLink {
   transition: 0s;
-  color: #a8a9b4 !important;
+  color: var(--unselected-light) !important;
   display: inline-table;
   padding: 12px 15px;
   margin-bottom: 8px;
@@ -258,8 +261,14 @@ h1, h2, h3, h4, h5, h6 {
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
 .wrapper {
-  margin: 6vh 0vh 3vh;
+  margin: 2vh 0vh 3vh;
 }
+
+.theme_title {
+  color: var(--unselected-light);
+  margin-left: 2vh;
+}
+
 .toggle_radio{
     background: rgba(255,255,255,.1);
     margin: 4px auto;
@@ -268,7 +277,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 50px;
     position: relative;
     height: 26px;
-    width: 30vh;
+    width: 29.5vh;
 }
 
 .toggle_radio input[type=radio]{
@@ -296,8 +305,8 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
 }
 .toggle_option_slider{
-  width: 100px;
-  width: 10vh;
+  /* width: 100px; */
+  width: 9vh;
   height: 20px;
   position: absolute;
   top: 3px;
@@ -321,9 +330,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 #third_toggle:checked ~ .toggle_option_slider{
   background: rgba(255,255,255,.3);
-  left: 19.5vh;
+  left: 20vh;
 }
 
+.d-flex {
+  display: -ms-flexbox !important;
+  display: flex !important;
+  height: 100vh !important;
+  justify-content: space-around !important;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -426,7 +441,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: var(--title-text);
 }
 
 .section-title h2::after {
@@ -460,7 +475,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: var(--title-text);
 }
 
 .about .content ul {
@@ -726,17 +741,19 @@ section {
   color: #fff;
   font-size: 28px;
   text-align: center;
-  background: rgba(20, 157, 221, 0.75);
+  background: var(--lowlight);
   transition: 0.3s;
   width: 50%;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  /* background: rgba(20, 157, 221, 0.95); */
+  background: var(--highlight);
 }
 
 .portfolio .portfolio-wrap .portfolio-links a + a {
-  border-left: 1px solid #37b3ed;
+  /* border-left: 1px solid #37b3ed; */
+  border-left: 1px solid var(--highlight);
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -792,7 +809,7 @@ section {
 }
 
 .venobox:hover .github-name {
-  width: 25%;
+  width: 28%;
   vertical-align: 6px;
   transition: all ease-in-out .5s;
   font-size: medium;
@@ -1004,7 +1021,7 @@ section {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #173b6c;
+  color: var(--title-text);
 }
 
 .contact .info .email p {
@@ -1125,7 +1142,8 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #37b3ed;
+  /* background: #37b3ed; */
+  background: var(--lowlight);
 }
 
 @-webkit-keyframes animate-loading {
