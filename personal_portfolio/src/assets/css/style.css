@@ -1,3 +1,11 @@
+:root {
+  --header:#040b14;
+  --highlight: #149ddd;
+  --lowlight: #2c2f3f;
+  --unselected: #6f7180;
+  --shadow-background: #f5f8fd;
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -10,11 +18,12 @@ body {
 }
 
 a {
-  color: #149ddd;
+  color: var(--highlight);
 }
 
 a:hover {
-  color: #37b3ed;
+  /* color: #37b3ed; */
+  color: var(--highlight);
   text-decoration: none;
 }
 
@@ -33,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #149ddd;
+  background: var(--highlight);
   color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
@@ -48,7 +57,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .back-to-top:hover {
   color: #fff;
-  background: #2eafec;
+  /* background: #2eafec; */
+  background: var(--highlight);
   transition: background 0.2s ease-in-out;
 }
 
@@ -66,10 +76,9 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
   overflow-y: auto;
   height: auto !important;
-  background: #040b14 !important;
+  background: var(--header) !important;
   border-bottom: none !important;
   display: none;
 }
@@ -79,7 +88,8 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 200px;
   height: 200px;
-  border: 8px solid #2c2f3f;
+  /* border: 8px solid #2c2f3f; */
+  border: 8px solid var(--lowlight);
   object-fit: cover;
   object-position: top;
 }
@@ -102,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #212431;
+  background: var(--lowlight);
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -115,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .profile .social-links a:hover {
-  background: #149ddd;
+  background: var(--highlight);
   color: #fff;
   text-decoration: none;
 }
@@ -173,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a i {
   font-size: 24px;
   padding-right: 8px;
-  color: #6f7180;
+  color: var(--unselected);
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
@@ -201,7 +211,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
-  color: #149ddd;
+  color: var(--highlight);
 }
 
 /* Mobile Navigation */
@@ -221,7 +231,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #149ddd;
+  color: var(--highlight);
 }
 
 .mobile-nav-active {
@@ -241,6 +251,77 @@ h1, h2, h3, h4, h5, h6 {
     left: 0px;
     /* display: block; */
   }
+}
+
+/* TOGGLE */
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+.wrapper {
+  margin: 6vh 0vh 3vh;
+}
+.toggle_radio{
+    background: rgba(255,255,255,.1);
+    margin: 4px auto;
+    overflow: hidden;
+    padding: 0 !important;
+    border-radius: 50px;
+    position: relative;
+    height: 26px;
+    width: 30vh;
+}
+
+.toggle_radio input[type=radio]{
+  display: none;
+  /*position: fixed;*/
+}
+.toggle_radio label{
+  font: 90%/1.618 "Source Sans Pro";
+  color: rgba(255,255,255,.9);
+  z-index: 0;
+  display: block;
+  /* width: 100px; */
+  width: 9vh;
+  height: 20px;
+  margin: 3px 3px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 1;
+  /*background: rgba(0,0,0,.1);*/
+  text-align: center;
+  /*margin: 0 2px;*/
+  /*background: blue;*/ /*make it blue*/
+  float: left;
+}
+.toggle_option_slider{
+  width: 100px;
+  width: 10vh;
+  height: 20px;
+  position: absolute;
+  top: 3px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  -ms-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+#first_toggle:checked ~ .toggle_option_slider{
+  background: rgba(255,255,255,.3);
+  left: .5vh;
+}
+#second_toggle:checked ~ .toggle_option_slider{
+  background: rgba(255,255,255,.3);
+  left: 10vh;
+}
+#third_toggle:checked ~ .toggle_option_slider{
+  background: rgba(255,255,255,.3);
+  left: 19.5vh;
 }
 
 /*--------------------------------------------------------------
@@ -332,7 +413,7 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: var(--shadow-background)
 }
 
 .section-title {
@@ -354,7 +435,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: var(--highlight);
   bottom: 0;
   left: 0;
 }
@@ -369,7 +450,7 @@ section {
 }
 
 .activeNav .bx {
-  color: #00a6eb;
+  color: var(--highlight);
   transition: 0s;
 }
 
@@ -394,7 +475,7 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 2px;
-  color: #149ddd;
+  color: var(--highlight);
 }
 
 .about .content p:last-child {
@@ -416,7 +497,7 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: #149ddd;
+  color: var(--highlight);
   float: left;
 }
 
@@ -486,7 +567,7 @@ section {
   width: 1px;
   height: 10px;
   transition: .9s;
-  background-color: #149ddd;
+  background-color: var(--highlight);
 }
 
 .skills-content {
@@ -497,7 +578,7 @@ section {
 
 .icon {
   font-size: 40px;
-  color: #149ddd;
+  color: var(--highlight);
 }
 
 .iconDiv {
@@ -599,7 +680,7 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  color: var(--highlight);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -749,10 +830,10 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #149ddd;
+  background: var(--highlight);
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #149ddd;
+  border: 1px solid var(--highlight);
 }
 
 .services .icon i {
@@ -765,7 +846,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #149ddd;
+  color: var(--highlight);
 }
 
 .services .title {
@@ -780,7 +861,7 @@ section {
 }
 
 .services .title a:hover {
-  color: #149ddd;
+  color: var(--highlight);
 }
 
 .services .description {
@@ -873,7 +954,7 @@ section {
 }
 
 .testimonials .owl-dot.active {
-  background-color: #149ddd !important;
+  background-color: var(--highlight) !important;
 }
 
 @media (max-width: 767px) {
@@ -899,7 +980,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: var(--highlight);
   float: left;
   width: 44px;
   height: 44px;
@@ -950,12 +1031,12 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #149ddd;
+  background: var(--highlight);
   color: #fff;
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #149ddd;
+  background: var(--highlight);
   color: #fff;
 }
 
@@ -1035,7 +1116,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #149ddd;
+  background: var(--highlight);
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1141,7 +1222,7 @@ section {
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
-  background-color: #149ddd !important;
+  background-color: var(--highlight) !important;
 }
 
 .portfolio-details .portfolio-info {
@@ -1209,7 +1290,7 @@ section {
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: #040b14;
+  background: var(--header);
 }
 
 #footer .copyright {
