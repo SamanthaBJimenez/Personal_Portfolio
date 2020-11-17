@@ -88,7 +88,7 @@
     background: #3498db;
   }
   .Toastify__toast--success {
-    background: deepskyblue;
+    background: var(--title-text);
   }
   .Toastify__toast--warning {
     background: #f1c40f;

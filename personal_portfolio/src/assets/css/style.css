@@ -181,6 +181,7 @@ h1, h2, h3, h4, h5, h6 {
     /* margin-bottom: 8px; */
     transition: 0.3s;
     font-size: 15px;
+    font-weight: 300;
 }
 
 .nav-menu a i {
@@ -395,6 +396,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   margin-bottom: 50px;
   font-size: 26px;
+  font-weight: 300;
   font-family: "Poppins", sans-serif;
 }
 
@@ -990,7 +992,8 @@ section {
 --------------------------------------------------------------*/
 .contact {
   /* margin-bottom: 110px; */
-  margin-bottom: 45px;
+  /* margin-bottom: 45px; */
+  height: 100vh;
 }
 
 .contact .info {
