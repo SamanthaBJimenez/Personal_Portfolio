@@ -13,7 +13,7 @@ const Landing = () => {
                 <div id="backgroundImg"></div>
                 <div class="hero-container aos-init aos-animate" data-aos="fade-in">
                     <h1>Samantha Jimenez</h1>
-                    <p style={{"display": "inline-flex"}}>I'm a <span style={{"border-bottom": "3px solid #149ddd"}} class="typed" >
+                    <p style={{"display": "inline-flex"}}>I'm a <span style={{"border-bottom": "3px solid var(--highlight)"}} class="typed" >
                         <TypistLoop interval={1000}>
                             {[
                             'Web Developer',

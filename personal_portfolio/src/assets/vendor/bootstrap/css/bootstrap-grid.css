@@ -1197,6 +1197,8 @@ html {
 .d-flex {
   display: -ms-flexbox !important;
   display: flex !important;
+  height: 100vh !important;
+  justify-content: space-around !important;
 }
 
 .d-inline-flex {
