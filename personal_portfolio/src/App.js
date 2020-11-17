@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './assets/css/style.css';
 import './assets/vendor/boxicons/css/boxicons.css'
 import './assets/vendor/boxicons/css/boxicons.min.css'
@@ -15,6 +15,14 @@ import { Link, Element } from 'react-scroll';
 import Contact from './components/Contact';
 
 function App() {
+  const [currentTheme, setTheme] = useState("blueTheme");
+  const [currentThemeObj, setThemeObj] = useState({
+    "--header": "#040b14",
+    "--highlight": "#149ddd",
+    "--lowlight": "#2c2f3f",
+    "--unselected": "#6f7180",
+    "--shadow-background": "#f5f8fd",
+  });
 
   const collapse = () => {
     let header = document.getElementById("header");
@@ -23,6 +31,46 @@ function App() {
     } else {
       header.style.display = "";
     }
+  }
+
+  const blueThemeObj = {
+    "--header": "#040b14",
+    "--highlight": "#149ddd",
+    "--lowlight": "#2c2f3f",
+    "--unselected": "#6f7180",
+    "--shadow-background": "#f5f8fd",
+  }
+
+  const brownThemeObj = {
+    "--header": "#573d1c",
+    "--highlight": "#e3c567",
+    "--lowlight": "#c896be",
+    "--unselected": "#6f7180",
+    "--shadow-background": "#f5f8fd",
+  }
+
+  const changeTheme = (e) => {
+    debugger;
+    setTheme(e.target.value);
+    if(e.target.value === 'blueTheme') {
+      setThemeObj(blueThemeObj)
+    } else if(e.target.value === 'brownTheme') {
+      setThemeObj(brownThemeObj);
+    }
+    // applyTheme();
+  }
+
+  useEffect(() => {
+    applyTheme();
+  }, [currentTheme, currentThemeObj])
+
+  const applyTheme = () => {
+    debugger;
+    Object.keys(currentThemeObj).map(key => {
+      const value = currentThemeObj[key];
+      // debugger;
+      document.documentElement.style.setProperty(key, value);
+    });
   }
 
   return (
@@ -74,6 +122,17 @@ function App() {
                   <li><a class="menuLink" href="https://drive.google.com/file/d/1aZu3ijxlOe350sGUkNFCc11DT6Jla9dc/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="bx bx-file"></i> <span>Resume</span></a></li>
                 </ul>             
               </nav>
+              <div class="wrapper">
+                <div class="toggle_radio">
+                  <input type="radio" class="toggle_option" id="first_toggle" name="toggle_option" onClick={changeTheme}/>
+                  <input type="radio" checked class="toggle_option" id="second_toggle" name="toggle_option" value="blueTheme" onClick={changeTheme}/>
+                  <input type="radio" class="toggle_option" id="third_toggle" name="toggle_option" value="brownTheme" onClick={changeTheme}/>
+                  <label for="first_toggle"><p>First</p></label>
+                  <label for="second_toggle"><p>Second</p></label>
+                  <label for="third_toggle"><p>Third</p></label>
+                  <div class="toggle_option_slider"></div>
+                </div>
+              </div>
             </div>
           </header>
         </div>
