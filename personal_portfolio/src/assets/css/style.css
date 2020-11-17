@@ -285,7 +285,8 @@ h1, h2, h3, h4, h5, h6 {
   /*position: fixed;*/
 }
 .toggle_radio label{
-  font: 90%/1.618 "Source Sans Pro";
+  font-size: 14px;
+  font-weight: 300;
   color: rgba(255,255,255,.9);
   z-index: 0;
   display: block;
@@ -338,6 +339,10 @@ h1, h2, h3, h4, h5, h6 {
   display: flex !important;
   height: 100vh !important;
   justify-content: space-around !important;
+}
+
+.d-flex-i {
+    display: flex !important;
 }
 /*--------------------------------------------------------------
 # Hero Section
