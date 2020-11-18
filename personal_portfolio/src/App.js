@@ -28,10 +28,15 @@ function App() {
 
   const collapse = () => {
     let header = document.getElementById("header");
+    let navIcon = document.getElementById("nav-collapse-icon");
     if (header.style.display !== "block") {
       header.style.display = "block";
+      navIcon.className = "icofont-close";
+      navIcon.style["font-size"] = "37px";
     } else {
       header.style.display = "";
+      navIcon.className = "icofont-navigation-menu";
+      navIcon.style["font-size"] = "33px";
     }
   }
 
@@ -118,7 +123,7 @@ function App() {
           aria-label="Toggle navigation"
           onClick={collapse}
         >
-          <span class="navbar-toggler-icon"><i class="icofont-navigation-menu"></i></span>
+          <span class="navbar-toggler-icon"><i id="nav-collapse-icon" class="icofont-navigation-menu"></i></span>
         </button>
         <div class="show collapse mobile-nav-active" id="navbarSupportedContent">
           <header id="header">

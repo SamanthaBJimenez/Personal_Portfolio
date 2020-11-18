@@ -260,6 +260,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+.icofont-navigation-menu {
+  font-size: 33px;
+}
+
 @media (max-width: 820px) {
   #header {
     left: 0px;
