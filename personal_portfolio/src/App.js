@@ -122,7 +122,7 @@ function App() {
         </button>
         <div class="show collapse mobile-nav-active" id="navbarSupportedContent">
           <header id="header">
-            <div class="d-flex flex-column">
+            <div class="d-flex-i flex-column">
               <div class="profile">
                 <img src={avatar} alt="" class="img-fluid rounded-circle"/>
                 <h1 class="text-light"><a href="index.html">Samantha Jimenez</a></h1>
@@ -134,13 +134,13 @@ function App() {
                 </div>
               </div>
               <nav class="nav-menu">
-                <ul>
+                <ul className="nav-ul">
                   <li><a class="menuLink"><span><Link to='landing' class="linkA"  activeClass='activeNav' spy={true} smooth={true} duration={500}><i class="bx bx-home"></i>Home</Link></span></a></li>
                   <li><a class="menuLink"><span><Link to='about' class="linkA"  activeClass='activeNav' spy={true} smooth={true} duration={500} offset={-30}><i class="bx bx-user"></i>About</Link></span></a></li>
                   <li><a class="menuLink"><span><Link to='skills' class="linkA"  activeClass='activeNav' spy={true} smooth={true} duration={500} offset={-30}><i class="bx bx-slider"></i>Skills</Link></span></a></li>
                   <li><a class="menuLink"><span><Link to='portfolio' class="linkA"  activeClass='activeNav' spy={true} smooth={true} duration={500} offset={-30}><i class="bx bx-collection"></i>Portfolio</Link></span></a></li>
                   <li><a class="menuLink" ><span><Link to='contact' class="linkA" activeClass='activeNav' spy={true} smooth={true} duration={500} offset={-77}><i class="bx bx-envelope"></i>Contact</Link></span></a></li>
-                  <li><a class="menuLink" href="https://drive.google.com/file/d/1aZu3ijxlOe350sGUkNFCc11DT6Jla9dc/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="bx bx-file"></i> <span style={{"margin-left": "-4px"}}>Resume</span></a></li>
+                  <li><a class="menuLink" href="https://drive.google.com/file/d/1dKcerB4hXPDHNRWJkuQWhaG3kHSb5TM9/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="bx bx-file"></i> <span style={{"margin-left": "-4px"}}>Resume</span></a></li>
                 </ul>             
               </nav>
               <div class="wrapper">
