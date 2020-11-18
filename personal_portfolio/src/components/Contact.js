@@ -34,16 +34,16 @@ const Contact = () => {
                 <p>Feel free to reach out. Let's connect!</p>
             </div>
             <div class="row aos-init aos-animate" data-aos="fade-in">
-                <div class="col-lg-7 mt-5 mt-lg-0 d-flex-i align-items-stretch">
+                <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
                     <form onSubmit={handleSubmit} class="php-email-form">
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <label for="name">Your Name</label>
+                                <label for="name">Name</label>
                                 <input type="text" name="name" class="form-control" id="name" required/>
                                 <div class="validate"></div>
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="name">Your Email</label>
+                                <label for="name">Email</label>
                                 <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" required/>
                                 <div class="validate"></div>
                             </div>
