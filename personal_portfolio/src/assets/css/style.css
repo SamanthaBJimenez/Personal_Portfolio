@@ -1322,6 +1322,73 @@ section {
     position: static;
     margin-top: 30px;
   }
+  /* .portfolio-wrap {
+    box-shadow: none !important;
+    transition: all ease-in-out .3s;
+  } */
+  .portfolio .portfolio-wrap .portfolio-links a {
+    background: var(--highlight) !important;
+    color: #fff !important;
+    font-size: 28px !important;
+    text-align: center !important;
+    transition: 0.3s !important;
+    width: 50% !important;
+    position: relative !important;
+    overflow: hidden !important;
+    z-index: 1 !important;
+    height: 67% !important;
+    width: 100% !important;
+    box-shadow: 5px 5px 9px darkgrey !important;
+  }
+  .venobox .github-name {
+    width: 28% !important;
+    vertical-align: 6px !important;
+    transition: all ease-in-out .5s !important;
+    font-size: medium !important;
+    margin-left: 6% !important;
+    display: inline-flex !important;
+    overflow: hidden !important;
+  }
+  .portfolio-wrap {
+    box-shadow: none;
+    transition: all ease-in-out .3s;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-links {
+    opacity: 1;
+    bottom: 0;
+  }
+  
+  .portfolio .portfolio-wrap .img-fluid {
+    opacity: .5;
+    transition: all .3s;
+  }
+  .portfolio-wrap .project-header {
+    color: #040B15;
+    z-index: 1;
+    transition: all ease-in-out .3s;
+    bottom: 125px;
+    font-size: 40px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    left: 10px;
+    font-family: "Raleway", sans-serif;
+    /* font-weight: 300; */
+    color: var(--header);
+  }
+  .liveA .live-site {
+    width: 31%;
+    vertical-align: 6px;
+    transition: all ease-in-out .5s;
+    font-size: medium;
+    margin-left: 6%;
+    display: inline-flex;
+    overflow: hidden;
+  }
+  .portfolio .portfolio-wrap .portfolio-links a + a {
+    border-left: 1px solid white;
+  }
 }
 
 /*--------------------------------------------------------------
