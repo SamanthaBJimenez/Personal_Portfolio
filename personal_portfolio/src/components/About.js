@@ -17,7 +17,7 @@ const About = () => {
                     <p class="font-italic">
                         I aspired to have a career I was passionate about and never looked back.
                     </p>
-                    <p>
+                    <p style={{"font-weight": "300"}}>
                         I'm a former Secretary of an elementary school in South Williamsburg. I originally went to college for Accounting but decided to take some time to find a career path I was more passionate about. After extensive research I discovered that software engineering was a field that combined the analytical skills I’ve developed so far in my career, with my desire to build and create. Since then I discovered Pursuit, a software engineering fellowship, and have grown to appreciate all things full stack. 
                     </p>
                 </div>
