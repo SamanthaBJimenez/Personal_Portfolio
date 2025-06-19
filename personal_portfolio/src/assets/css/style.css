@@ -288,6 +288,8 @@ h1, h2, h3, h4, h5, h6 {
 .theme_title {
   color: var(--unselected-light);
   margin-left: 2vh;
+  font-size: 14px;
+  margin-bottom: 8px;
 }
 
 .toggle_radio{
@@ -298,34 +300,33 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 50px;
     position: relative;
     height: 26px;
+    width: 100%;
+    max-width: 240px;
 }
 
 .toggle_radio input[type=radio]{
   display: none;
 }
 .toggle_radio label{
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
   color: rgba(255,255,255,.9);
   z-index: 0;
   display: block;
-  width: 8.4vh;
+  width: 33.33%;
   height: 20px;
-  margin: 3px 3px;
+  margin: 3px 0;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
   cursor: pointer;
   z-index: 1;
-  /*background: rgba(0,0,0,.1);*/
   text-align: center;
-  /*margin: 0 2px;*/
-  /*background: blue;*/ /*make it blue*/
   float: left;
+  line-height: 20px;
 }
 .toggle_option_slider{
-  /* width: 100px; */
-  width: 9vh;
+  width: 33.33%;
   height: 20px;
   position: absolute;
   top: 3px;
@@ -341,15 +342,15 @@ h1, h2, h3, h4, h5, h6 {
 
 #first_toggle:checked ~ .toggle_option_slider{
   background: rgba(255,255,255,.3);
-  left: .5vh;
+  left: 0;
 }
 #second_toggle:checked ~ .toggle_option_slider{
   background: rgba(255,255,255,.3);
-  left: 9.1vh;
+  left: 33.33%;
 }
 #third_toggle:checked ~ .toggle_option_slider{
   background: rgba(255,255,255,.3);
-  left: 17.8vh;
+  left: 66.66%;
 }
 
 .d-flex-i {
