@@ -133,9 +133,8 @@ function App() {
                 <h1 class="text-light"><a href="index.html">Samantha Jimenez</a></h1>
                 <div class="social-links mt-3 text-center">
                   <a href='https://github.com/SamanthaBJimenez' target="_blank" rel="noopener noreferrer" class="github"><i class="bx bxl-github"></i></a>
-                  <a href='mailto:SamanthaB.Jimenez@gmail.com' target="_blank" rel="noopener noreferrer" class="google"><i class="bx bxl-google"></i></a>
+                  <a href='mailto:SamanthaB.Jimenez@gmail.com' target="_blank" rel="noopener noreferrer" class="google"><i class="bx bx-envelope"></i></a>
                   <a href='https://www.linkedin.com/in/samanthabjimenez/' target="_blank" rel="noopener noreferrer" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                  <a href='https://twitter.com/MannyJimenez_' target="_blank" rel="noopener noreferrer" class="twitter"><i class="bx bxl-twitter"></i></a>
                 </div>
               </div>
               <nav class="nav-menu">
