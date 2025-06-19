@@ -298,7 +298,6 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 50px;
     position: relative;
     height: 26px;
-    width: 29.5vh;
 }
 
 .toggle_radio input[type=radio]{
@@ -311,8 +310,7 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(255,255,255,.9);
   z-index: 0;
   display: block;
-  /* width: 100px; */
-  width: 9vh;
+  width: 8.4vh;
   height: 20px;
   margin: 3px 3px;
   -webkit-border-radius: 50px;
@@ -348,11 +346,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 #second_toggle:checked ~ .toggle_option_slider{
   background: rgba(255,255,255,.3);
-  left: 10vh;
+  left: 9.1vh;
 }
 #third_toggle:checked ~ .toggle_option_slider{
   background: rgba(255,255,255,.3);
-  left: 20vh;
+  left: 17.8vh;
 }
 
 .d-flex-i {
