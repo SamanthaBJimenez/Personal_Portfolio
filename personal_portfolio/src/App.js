@@ -145,7 +145,7 @@ function App() {
                   <li><a class="menuLink"><span><Link to='skills' class="linkA"  activeClass='activeNav' spy={true} smooth={true} duration={500} offset={-30}><i class="bx bx-slider"></i>Skills</Link></span></a></li>
                   <li><a class="menuLink"><span><Link to='portfolio' class="linkA"  activeClass='activeNav' spy={true} smooth={true} duration={500} offset={-30}><i class="bx bx-collection"></i>Portfolio</Link></span></a></li>
                   <li><a class="menuLink" ><span><Link to='contact' class="linkA" activeClass='activeNav' spy={true} smooth={true} duration={500} offset={-77}><i class="bx bx-envelope"></i>Contact</Link></span></a></li>
-                  <li><a class="menuLink" href="https://drive.google.com/file/d/1dKcerB4hXPDHNRWJkuQWhaG3kHSb5TM9/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="bx bx-file"></i> <span style={{"margin-left": "-4px"}}>Resume</span></a></li>
+                  <li><a class="menuLink" href="https://www.canva.com/design/DAGdIEMAtNo/grr1fGsfF00Gf2DjLlVtww/edit?utm_content=DAGdIEMAtNo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer"><i class="bx bx-file"></i> <span style={{"margin-left": "-4px"}}>Resume</span></a></li>
                 </ul>             
               </nav>
               <div class="wrapper">
