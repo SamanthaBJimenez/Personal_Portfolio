@@ -307,6 +307,7 @@ h1, h2, h3, h4, h5, h6 {
 .toggle_radio input[type=radio]{
   display: none;
 }
+
 .toggle_radio label{
   font-size: 12px;
   font-weight: 300;
@@ -325,6 +326,7 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
   line-height: 20px;
 }
+
 .toggle_option_slider{
   width: 33.33%;
   height: 20px;
@@ -342,15 +344,15 @@ h1, h2, h3, h4, h5, h6 {
 
 #first_toggle:checked ~ .toggle_option_slider{
   background: rgba(255,255,255,.3);
-  left: 0;
+  left: 3px;
 }
 #second_toggle:checked ~ .toggle_option_slider{
   background: rgba(255,255,255,.3);
-  left: 33.33%;
+  left: 33%;
 }
 #third_toggle:checked ~ .toggle_option_slider{
   background: rgba(255,255,255,.3);
-  left: 66.66%;
+  left: 65.5%;
 }
 
 .d-flex-i {
